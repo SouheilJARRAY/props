@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 
 function Profile (props){
     const buttonSize={color:'red', textAlign:'center', fontSize:'20px', margin: '4px 2px',width:'10%'}
@@ -20,4 +20,11 @@ Profile.defaultProps ={
     bio:"can't get any information",
     profession:"assumed as jobless"
 };
+
+Profile.propTypes = {
+    fullName: PropTypes.string, 
+    bio: PropTypes.string,
+    profession: PropTypes.string
+}
+
 export default Profile
