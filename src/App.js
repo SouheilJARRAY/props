@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './profile/Profile';
+import souheil from './souheil.jpg'
+import ProfilePic from './profile/ProfilePic'
 
 function App() {
+  const handleName = profile => alert(profile);
+  const profileStyle ={color:"blue", textAlign:"center"};
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 style={profileStyle}>Hello!</h1>
+      <ProfilePic>{souheil}</ProfilePic>
+      <br></br>
+      <Profile fullName="Souheil JARRAY" bio="Java developer, 2 years of experience" profession="engineer" handleName={handleName}/>
     </div>
   );
 }
