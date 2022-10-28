@@ -14,4 +14,10 @@ function Profile (props){
         </>
     )
 }
+
+Profile.defaultProps ={
+    fullName:"anonymous",
+    bio:"can't get any information",
+    profession:"assumed as jobless"
+};
 export default Profile

@@ -6,5 +6,4 @@ function ProfilePic (props){
         <img src={props.children} style={profilePicStyle}/>
     )
 }
-
 export default ProfilePic

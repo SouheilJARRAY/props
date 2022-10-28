@@ -12,7 +12,7 @@ function App() {
       <h1 style={profileStyle}>Hello!</h1>
       <ProfilePic>{souheil}</ProfilePic>
       <br></br>
-      <Profile fullName="Souheil JARRAY" bio="Java developer, 2 years of experience" profession="engineer" handleName={handleName}/>
+      <Profile handleName={handleName}/>
     </div>
   );
 }
